@@ -5,96 +5,128 @@
     <title>Portfolio by Jonathan Saona</title>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 
 <body>
     <header>
         <div class="intro">
             <h1>Jonathan Saona</h1>
-            <h2>I enjoy designing and coding</h2>
-
+            <h2>Aspiring Front End Developer</h2>
+            <a href="#row" class="btn">View Projects</a>
         </div>
     </header>
 
-    <div class="wrapper">
+    <div class="container">
         <section class="about">
-            <p><img src="media/john1.jpg" alt="myself" class="align-left" /> Hi, I'm Jonathan. I recently graduated at Borough of Manhattan Community College in New York City. I’ve been living in the United States for 9 years. My favorite sport is soccer. I like playing video games. I also like to go to the gym. I’ve always been curious about technology since I was a kid. I’ve always wanted to know how website were made until I started learning it in school. I’m still developing my skills on building websites. Each day I try to learn new skills from school, and the internet which is a really good source to learn coding. </p>
+            <img src="media/john1.jpg" alt="myself" class="align-left">
+            <p> Hi, I'm Jonathan. I recently graduated at Borough of Manhattan Community College in New York City. I've
+                been living in the United States for 10 years. My most loved sport is soccer. Also I like playing
+                video games, workout.
+                <p>My interest were always technology since I was a child and how websites were made until the point
+                    that I began learning it at home and school. Despite everything i'm building up my
+                    aptitudes on building sites. Every day I endeavor to take in new abilities from school, websites
+                    such as Udemy and Codeacademy which are great sources to learn how to code.</p>
         </section>
-        
-        <div class="row">
-            <h1>WORK</h1>
+
+
+        <div class="skills">
+            <h1>skills</h1>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-plain colored"></i>
         </div>
-            
-            <!-- ASSIGNMENT 1 -->
-            <div class="column">
-                <a href="https://jsaona.github.io/MMP210/assignment8/" target="_blank"><img src="media/nyc.jpg" width="250" height="200"></a>
-                <div class="text-box-content">
-                <p>This is an assignment from MMP210. It was about creating a pattern using P5 javaScript.</p>
-                <a href="https://jsaona.github.io/MMP210/assignment8/" target="_blank" class="button">view project</a>
-            </div>
-        </div>
-            
-            <!-- ASSIGNMENT 2 -->
-            <div class="column">         
-                <a href="https://jsaona.github.io/mmp240/bootstrap/home.html" target="_blank"><img src="media/nyc.jpg" width="250" height="200"></a>
-                <div class="text-box-content">
-                <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
-                <a href="https://jsaona.github.io/mmp240/bootstrap/home.html" target="_blank" class="button">view project</a>
-            </div>
-        </div>
-            
-            <!-- ASSIGNMENT 3 -->
-            <div class="column">
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank"><img src="media/nyc.jpg" width="250" height="200"></a>
-                <div class="text-box-content">
-                <p>This is another MMP210 assignment. We were working on functions</p>
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank" class="button">view project</a>
-            </div>
-        </div>
-            
-            <!-- ASSIGNMENT 4 -->
-            <div class="column">
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank"><img src="media/nyc.jpg" width="250" height="200"></a>
-                <div class="text-box-content">
-                <p>This is another MMP210 assignment. We were working on functions</p>
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank" class="button">view project</a>
+
+        <h1>work</h1>
+        <div id="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="media/assignment1.png">
+                    <div class="text-box-content">
+                        <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
+                        <a href="https://jsaona.github.io/MMP-310/finalproject/index.html" target="_blank" class="button">view
+                            project</a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- ASSIGNMENT 5 -->
-            <div class="column">
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank"><img src="media/nyc.jpg" width="250" height="200"></a>
-                <div class="text-box-content">
-                <p>This is another MMP210 assignment. We were working on functions</p>
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank" class="button">view project</a>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="media/assignment2.png">
+                    <div class="text-box-content">
+                        <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
+                        <a href="https://jsaona.github.io/Todo-List/" target="_blank" class="button">view
+                            project</a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- ASSIGNMENT 6 -->
-            <div class="column">
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank"><img src="media/nyc.jpg" width="250" height="200"></a>
-                <div class="text-box-content">
-                <p>This is another MMP210 assignment. We were working on functions</p>
-                <a href="https://jsaona.github.io/MMP210/classwork/" target="_blank" class="button">view project</a>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="media/assignment3.png">
+                    <div class="text-box-content">
+                        <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
+                        <a href="https://jsaona.github.io/design-programs/index.html" target="_blank" class="button">view
+                            project</a>
+                    </div>
                 </div>
             </div>
-    </div>
+            <!-- <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                    <div class="text-box-content">
+                        <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
+                        <a href="https://jsaona.github.io/MMP210/assignment8/" target="_blank" class="button">view
+                            project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                    <div class="text-box-content">
+                        <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
+                        <a href="https://jsaona.github.io/MMP210/assignment8/" target="_blank" class="button">view
+                            project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                    <div class="text-box-content">
+                        <p>This was my final project from MMP200. I added bootstrap to add style to my page.</p>
+                        <a href="https://jsaona.github.io/MMP210/assignment8/" target="_blank" class="button">view
+                            project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
 
     <section class="contact">
+        <h1>Contact</h1>
         <div class="contact-content">
-            <h4>Email me:<a class"email" href="jonathansaona95@gmail.com">jonathansaona95@gmail.com</a></h4>
+            <p class="contant-content">Let's work together!</p>
+            <h4>Email me:<a class="email" href="mailto:jonathansaona95@gmail.com">jonathansaona95@gmail.com</a></h4>
+        </div>
+        <div class="credit">
+            <!-- SOCIAL MEDIA -->
+            <div class="social">
+                <a href="https://github.com/jsaona" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-saona-710624152/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <!-- <i class="fab fa-instagram"></i> -->
+            </div>
+            <p class="footer">&copy; Copyright 2018 Designed and Developed by Jonathan Saona</p>
         </div>
     </section>
-    <div class="image-divider">
-    </div>
-
-
-    <footer>
-        <p class="credit">&copy; Copyright 2018 Jonathan Saona.<br>Designed and Developed by Jonathan Saona.</p>
-
-    </footer>
-
 </body>
 
 </html>
