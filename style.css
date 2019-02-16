@@ -61,10 +61,12 @@ h5 {
 
 
 header {
-    background: #333 url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background: black url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center;
     width: 100%;
+    opacity: 0.9;
+    background-attachment: fixed;
 }
 
 .intro {
@@ -123,8 +125,6 @@ a.btn:hover {
     padding: 0% 22px;
     width: 873px;
     display: inline-block;
-/*    float: right*/
-
 }
 
 /*SKILLS*/
@@ -159,7 +159,6 @@ a.btn:hover {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8;
     color: #616569;
-    letter-spacing: .03em;
     font-size: 1em;
 }
 
