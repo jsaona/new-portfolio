@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f1f1f1 !important;
 }
@@ -164,7 +168,6 @@ a.btn:hover {
 
 
 .contact {
-    /* width: 100%; */
     background-color: #011826;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
