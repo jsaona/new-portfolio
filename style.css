@@ -51,7 +51,6 @@ h5 {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 5px;
-
     text-align: center;
     padding: 50px 0;
     font-family: 'Roboto', sans-serif;
@@ -60,9 +59,8 @@ h5 {
     color: inherit;
     font-size: 35px;
     text-transform: uppercase;
+    max-width: 1000px;
 }
-
-
 
 header {
     background: black url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -154,7 +152,6 @@ a.btn:hover {
     text-decoration: none;
 }
 
-
 /* WORK */
 .text-box-content p {
     padding: 12px;
@@ -166,14 +163,12 @@ a.btn:hover {
     font-size: 1em;
 }
 
-
 .contact {
     background-color: #011826;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     padding: 6% 0 0;
     margin-top: 3%;
-    margin: -70px;
     clear: both;
     clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -202,3 +197,4 @@ a.btn:hover {
     background: #1B242F;
     padding: 3%;
 }
+
