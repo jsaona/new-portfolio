@@ -14,6 +14,10 @@ body {
     background-color: #f1f1f1 !important;
 }
 
+.container {
+    max-width: 750px;
+}
+
 a {
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -28,13 +32,6 @@ a.email:hover {
 
 em {
     font-style: oblique;
-}
-
-img.align-left {
-    width: 257px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
 }
 
 img {
@@ -54,10 +51,10 @@ h5 {
     text-align: center;
     padding: 50px 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     margin: 0;
     color: inherit;
     font-size: 35px;
+    max-width: 100%; 
     text-transform: uppercase;
 }
 
@@ -65,16 +62,15 @@ header {
     background: black url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    opacity: 0.9;
     background-attachment: fixed;
 }
 
 .intro {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 8% 0;
     text-align: center;
+
 }
 
 .intro h1 {
@@ -100,19 +96,37 @@ a.btn {
     background: white;
     color: black;
     text-decoration: none;
-    padding: 1em 2em;
     margin: 0 auto;
-    border: 1px solid #666; 
+    border: 1px solid #666;
+    border-radius: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
 }
 
 a.btn:hover {
-    background: black;
+    background: #011826;
     color: white;
 }
 
-.about {
-    padding: 4% 0;
+.align-left {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
 }
+
+.about {
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Open Sans',sans-serif;
+  background-size: contain; 
+
+}
+
 
 .about p {
     font-family: 'Open Sans', sans-serif;
@@ -122,16 +136,18 @@ a.btn:hover {
     color: #616569;
     letter-spacing: .03em;
     margin: 10px auto;
+    padding: 10px;
     font-size: 18px;
-    padding: 0% 22px;
-    width: 873px;
+    padding: 0% 135px;
     display: inline-block;
+    /* max-width: 100%; */
 }
 
 /*SKILLS*/
 .skills {
     font-size: 9em;
     text-align: center;
+    max-width: 100%;
 }
 
 .button {
@@ -164,6 +180,7 @@ a.btn:hover {
 
 .contact {
     background-color: #011826;
+    max-width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     padding: 6% 0 0;
@@ -175,7 +192,7 @@ a.btn:hover {
 .contact-content p {
     text-align: center;
     font-size: 25px;
-    color: royalblue;
+    color: #007bff;
 }
 
 .social {
@@ -193,7 +210,26 @@ a.btn:hover {
 
 .credit {
     text-align: center;
-    background: #1B242F;
     padding: 3%;
 }
 
+
+/* MOBILE */
+@media only screen and (min-width: 375px) {
+    
+    .intro h1 {
+        font-size: 3em;
+        padding: 0;
+        
+    }
+
+    .about p {
+        padding: 8px;
+    }
+
+    .contact {
+       padding: 10% 15px 0;
+       
+   }
+
+}
