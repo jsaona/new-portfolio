@@ -16,53 +16,11 @@ body {
     background-color: #f1f1f1 !important;
     width: 100%;
     overflow-x: hidden;
-
-
-}
-
-.container {
-    max-width: 750px;
-}
-
-a {
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-
-a.email:hover {
-    text-decoration: none;
-}
-
-em {
-    font-style: oblique;
-}
-
-img {
-    width: 122%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 5px;
-    text-align: center;
-    padding: 50px 0;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    color: inherit;
-    text-transform: uppercase;
 }
 
 header {
-    background: black url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -95,43 +53,41 @@ header {
     letter-spacing: 10px;
 }
 
-a.btn {
-    background: white;
-    color: black;
-    text-decoration: none;
-    margin: 0 auto;
-    border: 1px solid #666;
-    border-radius: 15px;
-    font-size: 16px;
+.heading {
+    color: #616569;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
-    padding: 10px;
-}
-
-a.btn:hover {
-    background: #011826;
-    color: white;
-}
-
-.align-left {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    letter-spacing: 5px;
+    padding: 30px 0;
     
 }
 
-.about {
-  text-align: center;
-  margin: auto;
-  margin-top: 5%;
-  color: white;
-  font-family: 'Open Sans',sans-serif;
-  background-size: contain; 
 
+
+
+/* ABOUT ME */
+.align-left {
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
+.section-about {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  color: #616569; 
+  font-family: 'Open Sans',sans-serif;
+  background-size: contain; 
+}
 
-.about p {
+.about-me {
+    margin-top: 30px;
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -139,91 +95,218 @@ a.btn:hover {
     color: #616569;
     letter-spacing: .03em;
     margin: 10px auto;
-    padding: 10px;
     font-size: 18px;
-    padding: 0% 135px;
+    padding: 65px 135px;
     display: inline-block;
 }
 
-/*SKILLS*/
-.skills {
-    font-size: 7em;
-    text-align: center;
+
+
+
+/* WORK */
+.section-work {
+    padding: 5rem 0; 
 }
 
-.button {
-    padding: 5%;
-    letter-spacing: 0.2em;
+.feature-box {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+    animation: moveInBottom .3s ease-out;
+    padding: 1rem;
+    background: linear-gradient(125deg, rgb(0, 0, 0), rgb(88, 88, 88), rgb(192, 192, 192));
+    background-size: 200%;
+    z-index: 1;
+    -webkit-animation: Gradient 5s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+    animation: Gradient 5s ease infinite;
+}
+
+/* gradient animation */
+@-webkit-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Gradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.feature-box:hover {
+    transition: all .3s;
+    transform: translateY(-.5rem) scale(1.03);
+}
+
+a {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.email {
+    color: #fff;
+
+}
+
+.email:hover {
     text-decoration: none;
-    color: #011826;
+}
+
+em {
+    font-style: oblique;
+}
+
+img {
+    width: 122%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
     text-align: center;
-    display: block;
-    font-weight: 600;
+    padding: 50px 0;
+    margin: 0;
     text-transform: uppercase;
 }
 
-.button:hover {
-    color: #fff;
-    background-color: #011833;
+
+
+
+/*BUTTON*/
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
     text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    font-weight: bold;
+    position: relative;
 }
 
-/* WORK */
-.text-box-content p {
-    padding: 12px;
-    width: 350px;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.8;
-    color: #616569;
-    font-size: 1em;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);   
 }
 
-.contact {
-    background-color: #011826;
-    max-width: 100%;
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;;
+}
+
+.btn:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+
+
+
+/*SKILLS*/
+.section-skills {
+    padding: 5rem 0;    
+    font-size: 7em;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+
+
+
+/* CONTACT */
+.section-contact {
+    padding: 100px 0 0 0;
+    background: rgba(0,0,0);
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    padding: 6% 0 0;
+    color: #fff !important;
     margin-top: 3%;
     clear: both;
     clip-path: polygon(50% 16%, 100% 0, 100% 100%, 0 100%, 0 0);
+    text-align: center;
 }
 
 .contact-content p {
-    text-align: center;
     font-size: 25px;
-    color: #007bff;
 }
 
 .social {
-    color: white;
     padding: 1%;
     font-size: 2.5em;
     text-align: center;
 }
 
 
+
+/* FOOTER */
 .fab {
     font-family: "Font Awesome 5 Brands";
     padding-right: 16px;
+    color: #fff;
+}
+
+.fab:hover {
+    transition: all .3s;
+    transform: translateY(-.3rem) scale(1.03);
+    color: rgb(185, 185, 185);
 }
 
 .credit {
     text-align: center;
-    padding: 3%;
+    padding: 0 0px 20px 0px;
 }
 
 
+
+
+
+
+
 /* mobile */
-@media (max-width: 568px) {
+@media (max-width: 600px) {
     .intro h1 {
         font-size: 3em;
-        padding: 0;
-        
+        padding: 0; 
     }
 
-    .about p {
+    .about-me {
         padding: 8px;
     }
 
@@ -234,11 +317,11 @@ a.btn:hover {
     h4 {
         font-size: 14px !important;
         letter-spacing: 2px !important;
-
     }
 
-    .contact {
+    .section-contact {
         clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
+        font-size: 5vw;
     }
 
 
