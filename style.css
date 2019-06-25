@@ -113,7 +113,7 @@ header {
     transition: transform .3s;
     animation: moveInBottom .3s ease-out;
     padding: 1rem;
-    background: linear-gradient(125deg, rgb(0, 0, 0), rgb(88, 88, 88), rgb(192, 192, 192));
+    background: linear-gradient(125deg, rgb(124, 124, 124), rgb(0, 23, 87));
     background-size: 200%;
     z-index: 1;
     -webkit-animation: Gradient 5s ease infinite;
