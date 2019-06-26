@@ -42,6 +42,7 @@ header {
     letter-spacing: 0.1em;
     font-weight: 800;
     line-height: 1.5em;
+    animation: moveInLeft 1s ease-out;
 }
 
 .intro h2 {
@@ -51,6 +52,7 @@ header {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 10px;
+    animation: moveInRight 1s ease-out;
 }
 
 .heading {
@@ -137,6 +139,38 @@ header {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+/* Header Name Animation */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .feature-box:hover {
     transition: all .3s;
