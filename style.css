@@ -56,7 +56,19 @@ header {
 }
 
 .heading {
-    color: #616569;
+    color: #2e2e2e;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 30px 0;
+    
+}
+
+.heading-skills {
+    color: #f9f9f9;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -115,7 +127,8 @@ header {
     transition: transform .3s;
     animation: moveInBottom .3s ease-out;
     padding: 1rem;
-    background: linear-gradient(125deg, rgb(124, 124, 124), rgb(0, 23, 87));
+    /* background: linear-gradient(125deg, rgb(124, 124, 124), rgb(0, 23, 87)); */
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     background-size: 200%;
     z-index: 1;
     -webkit-animation: Gradient 5s ease infinite;
@@ -186,7 +199,9 @@ a {
 }
 
 .email {
-    color: #fff;
+    background-image: linear-gradient(to right, #2a2a72, #009ffd);
+    -webkit-background-clip: text;
+    color: transparent;
 
 }
 
@@ -277,7 +292,8 @@ h5 {
     padding: 5rem 0;    
     font-size: 7em;
     text-align: center;
-    background-color: #fff;
+    background: rgb(39, 39, 39);
+    
 }
 
 
@@ -287,7 +303,7 @@ h5 {
 /* CONTACT */
 .section-contact {
     padding: 100px 0 0 0;
-    background: rgba(0,0,0);
+    background: rgb(39, 39, 39);
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: #fff !important;
@@ -319,7 +335,10 @@ h5 {
 .fab:hover {
     transition: all .3s;
     transform: translateY(-.3rem) scale(1.03);
-    color: rgb(185, 185, 185);
+    background-image: linear-gradient(to bottom, #282883, #009ffd);
+    color: transparent;
+    -webkit-background-clip: text;
+
 }
 
 .credit {
