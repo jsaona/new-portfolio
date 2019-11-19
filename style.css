@@ -79,15 +79,13 @@ header {
     
 }
 
-
-
-
 /* ABOUT ME */
 .align-left {
     border-radius: 50%;
     max-width: 200px;
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .section-about {
@@ -114,44 +112,120 @@ header {
     display: inline-block;
 }
 
-
-
-
 /* WORK */
 .section-work {
     padding: 5rem 0; 
 }
 
-.feature-box {
+/* .feature-box {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transition: transform .3s;
     animation: moveInBottom .3s ease-out;
-    padding: 1rem;
-    /* background: linear-gradient(125deg, rgb(124, 124, 124), rgb(0, 23, 87)); */
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-    background-size: 200%;
-    z-index: 1;
-    -webkit-animation: Gradient 5s ease infinite;
-    -moz-animation: Gradient 5s ease infinite;
-    animation: Gradient 5s ease infinite;
-}
+} */
 
-/* gradient animation */
-@-webkit-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes Gradient { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+/* .feature-box  div{
+    background-color: #000000;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .feature-box a {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+} */
+
+/* .feature-box:hover {
+    transition: all ease-in-out 100ms;
+    transform: translateY(-.5rem) scale(1.0);
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+    text-decoration: none;
+} */
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* grid-template-rows: repeat(10, minmax(200px, auto)); */
+    gap: 20px;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6));
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s cubic-bezier(0.41, 0.01, 0.32, 0.94);
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  }
+  
+  .wrapper:hover .overlay {
+    opacity: 1;
+    text-decoration: none;
+  }
+  
+  .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* line-height: 2rem; */
+    /* margin-top: 20px; */
+
+  }
+  
+  .btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .btn-project:hover {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    color: white;
+    text-decoration: none;
+  }
+
+
+
 
 /* Header Name Animation */
 @keyframes moveInLeft {
@@ -184,25 +258,12 @@ header {
     }
 }
 
-
-.feature-box:hover {
-    transition: all .3s;
-    transform: translateY(-.5rem) scale(1.03);
-}
-
 a {
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-}
-
-.email {
-    background-image: linear-gradient(to right, #2a2a72, #009ffd);
-    -webkit-background-clip: text;
-    color: transparent;
-
 }
 
 .email:hover {
@@ -215,6 +276,10 @@ em {
 
 img {
     width: 122%;
+    opacity: 1;
+    display: block;
+    height: auto;
+
 }
 
 h1,
@@ -232,10 +297,12 @@ h5 {
     text-transform: uppercase;
 }
 
-
-
-
 /*BUTTON*/
+/* .fa-github:before {
+    content: "\f09b";
+    color: teal;
+} */
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -285,25 +352,19 @@ h5 {
 }
 
 
-
-
 /*SKILLS*/
 .section-skills {
     padding: 5rem 0;    
     font-size: 7em;
     text-align: center;
-    background: rgb(39, 39, 39);
-    
+    background-color: #202040;
 }
-
-
-
 
 
 /* CONTACT */
 .section-contact {
     padding: 100px 0 0 0;
-    background: rgb(39, 39, 39);
+    background-color: #202040;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: #fff !important;
@@ -323,32 +384,22 @@ h5 {
     text-align: center;
 }
 
-
-
 /* FOOTER */
 .fab {
     font-family: "Font Awesome 5 Brands";
     padding-right: 16px;
-    color: #fff;
+    color: #007bff;
 }
 
 .fab:hover {
     transition: all .3s;
     transform: translateY(-.3rem) scale(1.03);
-    background-image: linear-gradient(to bottom, #282883, #009ffd);
-    color: transparent;
-    -webkit-background-clip: text;
-
 }
 
 .credit {
     text-align: center;
     padding: 0 0px 20px 0px;
 }
-
-
-
-
 
 
 
@@ -376,6 +427,4 @@ h5 {
         clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
         font-size: 5vw;
     }
-
-
 }
